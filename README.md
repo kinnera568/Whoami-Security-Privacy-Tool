@@ -9,7 +9,7 @@
                           ###################################################################### 
                           #                                                                    #
                           ############################ THE POLICY ##############################
-                          #                YOU CAN NOT USE TO ANY ILLEGAL ATTAK                #
+                          #                YOU CAN NOT USE TO ANY ILLEGAL ATTACK               #
                           #            IF YOU DONT ACCEPT PLEASE RUN "bash uninstall.sh"       #
                           ############################    USAGE   ##############################
                           # bash install.sh                                                    #
