@@ -14,8 +14,8 @@ red=`tput setaf 196`
 reset=`tput sgr0`
 read -n 1 -s -r -p "${red}Press enter for the install whoami${reset}"
 echo ""
-mkdir iptool
-cd iptool
+mkdir .IPgeo
+cd .IPgeo
 git clone https://github.com/maldevel/IPGeoLocation
 pip3 install -r requirements.txt --user
 echo "${green}"IPGeo is installed ✅" ${reset}" && sleep 2 
@@ -84,8 +84,3 @@ if [[ $input == "Y" || $input == "y" ]]; then
         bash whoami.sh 
 fi
 echo ${red}"Script closed !" ${reset} 
-
-
-
-
-
