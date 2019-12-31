@@ -182,7 +182,7 @@ echo "${green}
                                                                                                   " 
 RED=`tput setaf 196`
 reset=`tput sgr0`
-cd iptool
+cd .IPgeo
 cd IPGeoLocation
 proxychains python3 ipgeolocation.py -m
 cd ..
