@@ -195,7 +195,7 @@ green=`tput setaf 46`
 reset=`tput sgr0`
 echo -n "${green}> ${reset}" && read input
 if n=0; [[ $n -lt $input ]]; then      
-      bash n=0; while [[ $n -lt $input ]]; do gnome-terminal --title="WHO AM I TERMİNAL"  --  bash term.sh  ; ((n= n+1)); done && clear && echo "${green}####################### $input Terminal has been launched ! #######################"
+      bash n=0; while [[ $n -lt $input ]]; do gnome-terminal --title="WHO AM I TERMİNAL"  --  bash .term.sh  ; ((n= n+1)); done && clear && echo "${green}####################### $input Terminal has been launched ! #######################"
 elif  [[ : ]]; then
       proxychains $input
       
