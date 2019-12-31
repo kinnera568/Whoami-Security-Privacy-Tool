@@ -20,6 +20,6 @@
                       #  gnome-terminal & proxychains & macchanger & tor service           #
                       ######################################################################
 
-![](.image(1).png)
-![](.image(2).png)
-![](.last.png)
+![](.whoami.png)
+![](.passwdcheck.png)
+![](.whoareyou.png)
