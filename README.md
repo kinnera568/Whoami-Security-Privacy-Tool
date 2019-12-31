@@ -19,3 +19,7 @@
                       #  If your os ıs not using apt-get you dowload this required         #
                       #  gnome-terminal & proxychains & macchanger & tor service           #
                       ######################################################################
+
+![](.image(1).png)
+![](.image(2).png)
+![](.last.png)
