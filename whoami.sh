@@ -185,6 +185,8 @@ reset=`tput sgr0`
 cd iptool
 cd IPGeoLocation
 proxychains python3 ipgeolocation.py -m
+cd ..
+cd ..
 echo ${RED}READY FOR ALL! ${reset} 
 echo -n ${RED}WARNING:${reset} && echo ${green}If you need more anonymous terminal you just wri̇te your how much need.
 for (( ; ; ))
