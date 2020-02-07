@@ -13,7 +13,7 @@ echo "${green}
 red=`tput setaf 196`
 reset=`tput sgr0`
 echo "${red}"Do you want remove whoami? [Y,n]"${reset}" 
-read -s input
+echo -n "${green}> ${reset}" && read -s input
 if [[ $input == "N" || $input == "n" ]]; then   
         green=`tput setaf 46`
         reset=`tput sgr0`
@@ -22,7 +22,7 @@ fi
         red=`tput setaf 196`
         reset=`tput sgr0`
         echo "${red}"Do you want remove Tor? [Y,n]"${reset}" 
-        read -s input
+        echo -n "${green}> ${reset}" && read -s input
         if [[ $input == "Y" || $input == "y" ]]; then
                  apt-get remove tor -y
 		 green=`tput setaf 46`
@@ -38,7 +38,7 @@ fi
         red=`tput setaf 196`
         reset=`tput sgr0`
         echo "${red}"Do you want remove Proxychains? [Y,n]"${reset}" 
-        read -s input
+        echo -n "${green}> ${reset}" && read -s input
         if [[ $input == "Y" || $input == "y" ]]; then
                  apt-get remove proxychains -y
                  green=`tput setaf 46`
@@ -52,7 +52,7 @@ fi
         red=`tput setaf 196`
         reset=`tput sgr0`
         echo "${red}"Do you want remove Macchanger? [Y,n]"${reset}" 
-        read -s input
+        echo -n "${green}> ${reset}" && read -s input
         if [[ $input == "Y" || $input == "y" ]]; then
                  apt-get remove macchanger -y 
                  reen=`tput setaf 46`
@@ -64,7 +64,7 @@ fi
                  echo "${red}"Macchanger is not removed"${reset}"              
 fi 
         echo "${red}"Write the WHOAMI file path {ex:/root/Desktop/whoami}"${reset}" 
-        read path
+        echo -n "${green}> ${reset}" && read path
 if      cd $path ; then
         rm -fr $path 
         green=`tput setaf 46`
