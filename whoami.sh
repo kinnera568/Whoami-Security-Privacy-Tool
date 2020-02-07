@@ -14,7 +14,7 @@ red=`tput setaf 196`
 reset=`tput sgr0`
 echo
 echo -n "${green}"Creat a new password "for" tool "" && echo ${red}"[ Password now invisible ]"
-read -s password
+echo -n "${green}> ${reset}" && read -s password
 echo "${green}"Password creat successful  
 service network-manager stop 
 if chattr -i /etc/resolv.conf  ; then   
@@ -50,7 +50,7 @@ reset=`tput sgr0`
 lightblue=`tput setaf 14`
 reset=`tput sgr0`
 echo "${green}Write Your Network Interface {etc:wlan0,wlan1,eth0,eth1}"${reset}
-read input
+echo -n "${green}> ${reset}" && read input
 if ifconfig $input down > /dev/null ; then
    macchanger -r $input > /dev/null
    ifconfig $input up  > /dev/null && echo "${lightblue}MAC HAS BEEN CHANGED${reset}" &&sleep 2  
@@ -156,7 +156,7 @@ echo "${green}
  ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═════╝      ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝ "
 echo ""
 echo "${green}Write your password${reset}"
-read -s rpasswd
+echo -n "${green}> ${reset}" && read -s rpasswd
 if [[ $rpasswd == $password ]]; then      
        echo "${green}"Authentication sucsessfull"" && sleep 2
 else   clear && echo "${red}
